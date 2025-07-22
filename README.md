@@ -1,8 +1,8 @@
-# ABG_16S
+# 16S rRNA Analysis of New York African Burial Ground Soil Samples
+Description
 Scripts and workflows for 16S rRNA amplicon analysis of New York African Burial Ground soil samples using QIIME2. Includes demultiplexing, taxonomy assignment, diversity analyses, and differential abundance testing with ALDEx2 and ANCOM, ensuring reproducibility of the study.
 
-
-16S rRNA Analysis of New York African Burial Ground Soil Samples
+Purpose
 This repository contains scripts, configuration files, and workflow documentation for the analysis of 16S rRNA amplicon sequencing data from the New York African Burial Ground (NYABG) burial soils and nearby urban controls. The pipeline is designed to be reproducible and mirrors the bioinformatic workflow used in our manuscript "Human-Associated Microbial Persistence and Ecological Succession in Burial Soils from the New York African Burial Ground".
 
 Overview
