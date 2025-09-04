@@ -1,3 +1,6 @@
+##### Demultiplex 
+##Created by Carter Clinton
+
 #!/usr/bin/env bash
 # demultiplex_summarize.sh — Summarize demultiplexed reads (QIIME 2 demux summarize)
 # Analysis Stage: Import
