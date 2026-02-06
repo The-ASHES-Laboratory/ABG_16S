@@ -1,9 +1,6 @@
-##### 01_Demultiplex
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 Demultiplexing and Import for Paired-End 16S Reads
+# By Carter Clinton, Ph.D.
 # demultiplex_summarize.sh — Summarize demultiplexed reads (QIIME 2 demux summarize)
 # Analysis Stage: Import
 # Language: Bash
@@ -132,5 +129,3 @@ log "Done."
 log "Artifacts:"
 log "  DEMUX_QZA: $DEMUX_QZA"
 log "  SUMMARY_QZV: $SUMMARY_QZV"
-
-

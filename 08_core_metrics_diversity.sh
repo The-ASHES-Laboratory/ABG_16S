@@ -1,9 +1,6 @@
-##### 08_Core_Metrics_Diversity
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 Core Diversity Metrics and Group Significance Tests
+# By Carter Clinton, Ph.D.
 # core_metrics_diversity.sh — Run QIIME 2 core-metrics-phylogenetic + group significance tests
 # Maps original file: Core_Metrics_SILVA.txt
 # Analysis Stage: Phylogeny & Diversity
@@ -244,4 +241,3 @@ else
 fi
 
 log "Done. See outputs in $OUTPUT_DIR."
-

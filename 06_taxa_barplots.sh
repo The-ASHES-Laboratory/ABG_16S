@@ -1,9 +1,6 @@
-##### 06_Taxa_Barplots
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 Taxa Bar Plots and Rank-Collapsed Tables
+# By Carter Clinton, Ph.D.
 # taxa_barplots.sh — Generate SILVA-based taxa bar plots and (optionally) collapsed tables
 # Maps original file: Taxa_Bar_Plots_SILVA.txt
 # Analysis Stage: Taxonomy & Composition
@@ -168,4 +165,3 @@ for L in "${LVLS[@]}"; do
   [ "$DO_SUMMARIES" -eq 1 ] && log "  collapse/${LABEL}_L${L}_table.qzv"
   [ "$MAKE_REL" -eq 1 ]     && log "  collapse/${LABEL}_L${L}_relfreq.qza"
 done
-

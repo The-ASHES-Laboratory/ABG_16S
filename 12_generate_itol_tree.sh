@@ -1,9 +1,6 @@
-##### 12_Generate_iTOL_tree
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# iTOL Phylogenetic Tree Preparation with Color Annotations
+# By Carter Clinton, Ph.D.
 # generate_itol_tree.sh — Select top-N genera, prune ASVs & tree, and emit iTOL annotation files
 # Maps original file: ITOL_trees_SILVA.txt
 # Analysis Stage: Species-level & Targeted Trees
@@ -288,6 +285,3 @@ log "Done.
 - Legend: $ITOL_LEGEND
 - Kept ASVs: $KEEP_IDS
 "
-
-
-

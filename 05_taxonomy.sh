@@ -1,9 +1,6 @@
-##### 05_Taxonomy
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 SILVA Naive Bayes Taxonomy Classification
+# By Carter Clinton, Ph.D.
 # taxonomy.sh  —  Train (optional) and run SILVA Naïve Bayes taxonomy classification; make bar plots
 # Maps original file: taxonomy_with_silva.txt
 # Analysis Stage: Taxonomy & Composition
@@ -227,6 +224,3 @@ log "  TAXONOMY_QZA: $TAX_QZA"
 log "  TAXONOMY_QZV: $TAX_QZV"
 [ -f "${OUTPUT_DIR}/barplots/${LABEL}_taxa-bar-plots.qzv" ] && log "  BARPLOTS_QZV: ${OUTPUT_DIR}/barplots/${LABEL}_taxa-bar-plots.qzv"
 [ -d "$OUTPUT_DIR/trained" ] && ls "$OUTPUT_DIR/trained"/*.qza >/dev/null 2>&1 && log "  TRAINED_CLASSIFIER: $(ls "$OUTPUT_DIR/trained"/*_classifier.qza)"
-
-
-

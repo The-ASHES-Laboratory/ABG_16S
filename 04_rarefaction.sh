@@ -1,9 +1,6 @@
-##### 04_Rarefaction
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 Alpha-Rarefaction Curve Generation
+# By Carter Clinton, Ph.D.
 # rarefaction.sh — Generate alpha-rarefaction curves (QIIME 2)
 # Analysis Stage: QC & Denoising
 # Language: Bash
@@ -129,4 +126,3 @@ log "Running: ${CMD[*]}"
 
 log "Done. Outputs:"
 log "  $OUT_QZV"
-

@@ -1,9 +1,6 @@
-##### 09_Permdisp
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 PERMDISP Homogeneity of Dispersion Testing
+# By Carter Clinton, Ph.D.
 # permdisp.sh — Test homogeneity of dispersion (PERMDISP) across groups (beta) for multiple distance matrices
 # Maps original file: 07_Diversity_Analyses_Add-on.txt
 # Analysis Stage: Phylogeny & Diversity
@@ -206,4 +203,3 @@ for col in "${COLS[@]}"; do
 done
 
 log "Done. PERMDISP outputs in: $OUTPUT_DIR/permdisp"
-

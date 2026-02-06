@@ -1,9 +1,6 @@
-##### 13_Human_Pathogen_Curation
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env python3
+# Human-Associated and Pathogenic Taxa Curation
+# By Carter Clinton, Ph.D.
 # human_pathogen_curation.py — Curate & flag human-associated/pathogenic taxa from QIIME taxonomy outputs
 # Maps original file: Hu_microbiome_pathogen_list
 # Analysis Stage: Human-Associated / Pathogen Curation
@@ -138,6 +135,3 @@ def read_reference_lists(paths: List[Path]) -> pd.DataFrame:
     if not refs:
         raise ValueError("At least one curated reference list is required.")
     ref = pd.con
-
-
-

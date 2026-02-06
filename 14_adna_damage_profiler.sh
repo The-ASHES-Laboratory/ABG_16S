@@ -1,9 +1,6 @@
-##### 14_aDNA_Damage_Profiler
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# Ancient DNA Damage Profiling with DamageProfiler
+# By Carter Clinton, Ph.D.
 # adna_damage_profiler.sh — Map short reads and generate aDNA damage profiles with DamageProfiler
 # Maps original file: aDNA_verification.txt
 # Analysis Stage: aDNA Authentication
@@ -223,6 +220,3 @@ shopt -u nullglob
 
 log "Done. BAMs in $BAM_DIR, damage profiles in $DP_DIR"
 log "Manifest: $manifest"
-
-
-

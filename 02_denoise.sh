@@ -1,9 +1,6 @@
-##### 02_denoise
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 DADA2 Denoising for Paired-End 16S Reads
+# By Carter Clinton, Ph.D.
 # dada2_denoise_paired.sh — QIIME 2 DADA2 denoising for paired-end reads
 # Analysis Stage: QC & Denoising
 # Language: Bash
@@ -167,6 +164,3 @@ log "  $OUTPUT_DIR/${LABEL}_denoising-stats.qza"
   log "  $OUTPUT_DIR/${LABEL}_table.qzv"
   log "  $OUTPUT_DIR/${LABEL}_rep-seqs.qzv"
 }
-
-
-

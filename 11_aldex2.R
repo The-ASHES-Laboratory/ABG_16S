@@ -1,9 +1,6 @@
-##### 11_ALDEx2
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env Rscript
+# ALDEx2 Differential Abundance Analysis with Effect Sizes
+# By Carter Clinton, Ph.D.
 # aldex2.R — ALDEx2 differential abundance with effect sizes, plots, and heatmap
 # Maps original file: ALDEx2_SILVA.txt
 # Analysis Stage: Differential Abundance
@@ -241,6 +238,3 @@ capture <- capture.output({
 writeLines(capture, out_path(sprintf("%s_sessionInfo.txt", opt$label)))
 
 message("Done. Outputs written to: ", opt$`output_dir`)
-
-
-

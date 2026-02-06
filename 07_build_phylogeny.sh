@@ -1,9 +1,6 @@
-##### 07_Build_Phylogeny
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 Phylogenetic Tree Construction (MAFFT + FastTree)
+# By Carter Clinton, Ph.D.
 # build_phylogeny.sh — Build SILVA-based phylogeny via MAFFT → mask → FastTree → midpoint-root (QIIME 2)
 # Maps original file: Phylogeentic_Reconstruction_SILVA.txt
 # Analysis Stage: Phylogeny & Diversity
@@ -162,4 +159,3 @@ log "  $(basename "$MASKED")"
 log "  $(basename "$UNROOTED")"
 log "  $(basename "$ROOTED")"
 [ "$EXPORT_NEWICK" -eq 1 ] && log "  ${LABEL}_rooted-tree.nwk"
-

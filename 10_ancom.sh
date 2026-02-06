@@ -1,9 +1,6 @@
-##### 10_ANCOM
-##### By Carter Clinton
-
-
-
 #!/usr/bin/env bash
+# QIIME 2 ANCOM Differential Abundance Analysis
+# By Carter Clinton, Ph.D.
 # ancom.sh — Run QIIME 2 ANCOM at one or more taxonomy ranks with optional species-only variant
 # Maps original file: ANCOM_SILVA.txt
 # Analysis Stage: Differential Abundance
@@ -231,6 +228,3 @@ if [ "$SPECIES_ONLY" -eq 1 ]; then
 fi
 
 log "Done. ANCOM outputs under: $OUTPUT_DIR/ancom"
-
-
-
