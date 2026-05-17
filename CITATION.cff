@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "ABG_16S: 16S rRNA amplicon analysis pipeline for New York African Burial Ground soil samples"
+message: "If you use this software, please cite the publication referenced below."
+type: software
+authors:
+  - given-names: Carter
+    family-names: Clinton
+    name-particle: D.
+    affiliation: "Department of Biological Sciences, North Carolina State University"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.1"
+date-released: "2026-02-06"
+doi: ""
+license: MIT
+repository-code: "https://github.com/The-ASHES-Laboratory/ABG_16S"
+keywords:
+  - microbiome
+  - 16S rRNA
+  - amplicon sequencing
+  - QIIME 2
+  - burial soils
+  - ancient DNA
+  - phylogenetics
+  - source tracking
+abstract: >
+  Complete bioinformatic pipeline for 16S rRNA amplicon sequencing analysis of
+  burial soils from the New York African Burial Ground (NYABG) and nearby urban
+  control sites. Provides QIIME 2 wrappers for demultiplexing, denoising,
+  taxonomy classification, diversity analysis, and differential abundance, plus
+  region-specific SILVA classifier training, iTOL-ready phylogenetic tree
+  generation, human-associated and pathogenic taxa curation, and ancient DNA
+  damage profiling for authentication. Designed for reproducibility: every
+  script is fully parameterized via CLI arguments with no hardcoded paths.
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Carter
+      family-names: Clinton
+      name-particle: K.
+    - given-names: Fatimah
+      family-names: Jackson
+      name-particle: L. C.
+  title: "Persistent human-associated microbial signatures in burial soils from the 17th and 18th century New York African Burial Ground"
+  journal: "ISME Communications"
+  volume: 5
+  issue: 1
+  year: 2025
+  doi: "10.1093/ismeco/ycaf181"

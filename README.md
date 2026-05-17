@@ -79,19 +79,19 @@ Every script accepts `--help` for full usage details, parameters, and examples.
 conda activate qiime2-2024.5
 
 # Import and summarize reads
-bash 01_demultiplex.sh -M manifest.csv -o 01_demux/
+bash scripts/01_demultiplex.sh -M manifest.csv -o 01_demux/
 
 # Denoise with DADA2
-bash 02_denoise.sh -i 01_demux/demux.qza -o 02_denoise/ --trunc-len-f 240 --trunc-len-r 220
+bash scripts/02_denoise.sh -i 01_demux/demux.qza -o 02_denoise/ --trunc-len-f 240 --trunc-len-r 220
 
 # QC summary to choose rarefaction depth
-bash 03_seq_depth_and_QC.sh -t 02_denoise/dada2_table.qza -s 02_denoise/dada2_rep-seqs.qza -o 03_qc/
+bash scripts/03_seq_depth_and_QC.sh -t 02_denoise/dada2_table.qza -s 02_denoise/dada2_rep-seqs.qza -o 03_qc/
 
 # Rarefaction curves
-bash 04_rarefaction.sh -i 02_denoise/dada2_table.qza -o 04_rare/ --max-depth 1000
+bash scripts/04_rarefaction.sh -i 02_denoise/dada2_table.qza -o 04_rare/ --max-depth 1000
 
 # Taxonomy classification
-bash 05_taxonomy.sh -t 02_denoise/dada2_table.qza -s 02_denoise/dada2_rep-seqs.qza \
+bash scripts/05_taxonomy.sh -t 02_denoise/dada2_table.qza -s 02_denoise/dada2_rep-seqs.qza \
   -c silva-138-classifier.qza -m metadata.tsv -o 05_taxonomy/
 
 # Continue through scripts 06-14 as needed...
@@ -101,24 +101,40 @@ bash 05_taxonomy.sh -t 02_denoise/dada2_table.qza -s 02_denoise/dada2_rep-seqs.q
 
 ```
 ABG_16S/
-├── 01_demultiplex.sh              # Read import and demux summary
-├── 02_denoise.sh                  # DADA2 denoising
-├── 03_seq_depth_and_QC.sh         # Depth assessment and QC
-├── 04_rarefaction.sh              # Alpha-rarefaction curves
-├── 05_taxonomy.sh                 # SILVA taxonomy classification
-├── 06_taxa_barplots.sh            # Taxa bar plots and collapsed tables
-├── 07_build_phylogeny.sh          # Phylogenetic tree construction
-├── 08_core_metrics_diversity.sh   # Core diversity metrics and tests
-├── 09_permdisp.sh                 # PERMDISP dispersion testing
-├── 10_ancom.sh                    # ANCOM differential abundance
-├── 11_aldex2.R                    # ALDEx2 differential abundance (R)
-├── 12_generate_itol_tree.sh       # iTOL tree preparation
-├── 13_human_pathogen_curation.py  # Pathogen/human taxa curation (Python)
-├── 14_adna_damage_profiler.sh     # aDNA damage profiling
-├── LICENSE                        # MIT License
-├── .gitignore                     # Standard Python/Conda ignores
-└── README.md                      # This file
+├── README.md
+├── LICENSE.md
+├── CHANGELOG.md
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── .gitignore
+├── docs/
+│   ├── architecture.md            # pipeline structure and authentication strategy
+│   ├── extending.md               # adapting to new regions, classifiers, methods
+│   └── parameters.md              # key parameters and rationale
+└── scripts/
+    ├── 01_demultiplex.sh              # Read import and demux summary
+    ├── 02_denoise.sh                  # DADA2 denoising
+    ├── 03_seq_depth_and_QC.sh         # Depth assessment and QC
+    ├── 04_rarefaction.sh              # Alpha-rarefaction curves
+    ├── 05_taxonomy.sh                 # SILVA taxonomy classification
+    ├── 06_taxa_barplots.sh            # Taxa bar plots and collapsed tables
+    ├── 07_build_phylogeny.sh          # Phylogenetic tree construction
+    ├── 08_core_metrics_diversity.sh   # Core diversity metrics and tests
+    ├── 09_permdisp.sh                 # PERMDISP dispersion testing
+    ├── 10_ancom.sh                    # ANCOM differential abundance
+    ├── 11_aldex2.R                    # ALDEx2 differential abundance (R)
+    ├── 12_generate_itol_tree.sh       # iTOL tree preparation
+    ├── 13_human_pathogen_curation.py  # Pathogen/human taxa curation (Python)
+    └── 14_adna_damage_profiler.sh     # aDNA damage profiling
 ```
+
+## Documentation
+
+Additional documentation lives under `docs/`:
+
+- [`architecture.md`](docs/architecture.md) — pipeline structure, authentication strategy, and stage-level data flow
+- [`extending.md`](docs/extending.md) — adapting to new 16S regions, classifiers, and differential abundance methods
+- [`parameters.md`](docs/parameters.md) — key parameters and the rationale for each default
 
 ## Data Requirements (not included)
 
